@@ -34,3 +34,6 @@ Javascript has 3 kinds of scope:
 
 Debugging react
 1) React Developer tools. (Available across safari,chrome,firefox etc.)
+
+
+Component that owns a state can only modify that state.

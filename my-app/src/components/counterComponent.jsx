@@ -11,7 +11,6 @@ class valueer extends Component {
      }
      
     render() {    
-   
         return (
             <div>
                 <h4>Counter #{this.props.id}</h4>
@@ -19,9 +18,7 @@ class valueer extends Component {
                     {this.formatvalue()}
                 </span>
                 <button onClick={()=>this.setState({value:this.state.value+1})} className='btn btn-secondary btn-sm'>Increement</button>
-                {/* <ul>
-                    {this.state.tags.map(tag=> <li key={tag}>{ tag }</li> )}
-                </ul> */}
+                <button onClick={this.props.onDelete} className="btn btn-danger btn-sm m-2">Delete</button>
             </div>
         );
     }
