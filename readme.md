@@ -10,13 +10,17 @@ Here the result is the last operand in case of non-boolean comparisons.
 Eg: true && "Hi" && 1
 Sol: here result is 1.
 
+Call function (function currying)
+Apply function (functon borrowing)
+bind function (function binding)
+
 All web browsers operate in strict mode by default.
 1) We cannot use variable which are not declared using keywords like let,var or const.
 2) We cannot refer to global object using this keyword inside a function.
 
-Call function (function currying)
-Apply function (functon borrowing)
-bind function (function binding)
+For this we make use of arrow functions which donot rebind the "this" function
+they inherit it. So we can avoid using constructor to bind event handlers to 
+the object.
 
 closure
 scope and scope chain features in javascript.
