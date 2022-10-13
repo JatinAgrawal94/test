@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class valueer extends Component {
     state = { 
-        value:this.props.value,
+        value:this.props.counter.value,
         // tags:['tag1','tag2','tag3']
      } 
 
@@ -13,12 +13,13 @@ class valueer extends Component {
     render() {    
         return (
             <div>
-                <h4>Counter #{this.props.id}</h4>
+                
+                <h4>Counter #{this.props.counter.id}</h4>
                 <span className={this.getBadgeClasses()}>
                     {this.formatvalue()}
                 </span>
                 <button onClick={()=>this.setState({value:this.state.value+1})} className='btn btn-secondary btn-sm'>Increement</button>
-                <button onClick={this.props.onDelete} className="btn btn-danger btn-sm m-2">Delete</button>
+                <button onClick={this.props.counter.onDelete} className="btn btn-danger btn-sm m-2">Delete</button>
             </div>
         );
     }

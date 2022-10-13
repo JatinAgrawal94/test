@@ -31,7 +31,7 @@ class Counters extends Component {
      
         return (
             <div>
-                {this.state.counters.map(counter=> <Counter key={counter.id} onDelete={()=>this.setState({counters:this.state.counters.filter(e=>e.id!==counter.id)})} value={counter.value} id={counter.id} selected>
+                {this.state.counters.map(counter=> <Counter key={counter.id} onDelete={()=>this.setState({counters:this.state.counters.filter(e=>e.id!==counter.id)})} counter={counter} selected>
                 </Counter>
                 )}
             </div>
